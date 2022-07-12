@@ -51,3 +51,8 @@ You can filter transactions by date, token amount, time, sender's address, and r
 ### Usability and improvements
 This app is quite user friendly and I am open for feedbacks on the usability. Personally, I think one area that needs improvement is the search field that takes a bit of time to respond due to the large volume of data available.
 
+
+
+## Bonus
+You can also view my other project where I fetched github's graphql api. Click the link or copy and paste it on your browser url field to view the project [https://github-access.netlify.app](https://github-access.netlify.app).\
+You can search for any github user by typing the user's github user name, and view the users profile and his last 20 repositories
