@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# ABOUT THIS APP
 
+This app is a basic app built in response to a an engineering test for front end developmen position.\
+I called the app fintech because it was the first concept that came to my mind when I was creating the app with create-react-app\
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The API used for this application is the bitquery graphql api. The reason I choosed the bitquery api is due to my passion for blockchain technology and transactions
 
-## Available Scripts
+## `Technologies/Tools\Resources used in building this app`
+The technologies and tools used in building this app are listed below :\
+``1. React was used to build the UI: This was a requirement for the exercise``\
+``2. The stylings were done with Chakra UI library and a bit of pure CSS``\
+``3. Github was used to save the code and the link to the repo is `` [https://github.com/Klasss4Web/engineering-challenge.git](https://github.com/Klasss4Web/engineering-challenge.git)\
+``4. API fetching was done with fetch. I decided to go with fetch instead of axios because I work with axios on daily basis and I want a feel of fetch``
+``5  dayjs was used for handling dates and make them mored readable``\
+``6. Bitquery graphql API is the open source api integrated into this app.`` [https://graphql.bitquery.io](https://graphql.bitquery.io)
 
-In the project directory, you can run:
 
-### `npm start`
+## Steps to view this project on your local machine
+``1. Clone the github repo ``[https://github.com/Klasss4Web/engineering-challenge.git](https://github.com/Klasss4Web/engineering-challenge.git)\
+``2. Install all the dependencies for the project by running the command, "npm install"``\
+``3. Run "npm start" to view the project on your browser``
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Alternatively, you can view this app by clicking the link [https://engineering-challenge.netlify.app/](https://engineering-challenge.netlify.app) or copying and pasting the link to view the hosted app
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Description
+This app basically shows transfer records between ``October, 01 2020 to October, 08 2020`` of an ERC21 token. 
+I took guide for building this app especially the UI from a wireframe presented in this link [https://helicarrier.notion.site/Engineering-Challenge-f870aea032e14381ae4e404263534326](https://helicarrier.notion.site/Engineering-Challenge-f870aea032e14381ae4e404263534326)
+The UI for this app consist of a table that shows the transaction records separated by diffrent dates
+The fields on the table includes: \
+``1. The unique ID for each transaction``\
+``2. The transaction type, which is basically Ethereum transfer``\
+``3. Total token transfered``\
+``4. Address for the smart contract on the ethereum network``\
+``5. The name of the token``\
+``6. The standard of the token in the ethereum network, ERC20 in this case``\
+``7. The exact time the transaction took place``\
+``8. The address of the account that sent the token: senders address``\
+``9. The address of the account that received the token: receivers address``\
+``10.The status of the transaction, success or failed``
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Basic Functionalities
+### Search bar
+You can search for transactions by typing a specific date```(YYYY-MM-DD e.g 2020-10-05)``` on the search bar\
+You can also search for transactions by typing a specific time```(hh:mm:ss e.g 05:41:02)``` on the search bar\
+You can also search for transactions by typing a specific token amount```(e.g 50)``` on the search bar 
 
-### `npm run build`
+### Filter dropdown
+You can filter transactions by date, token amount, time, sender's address, and receiver's address
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Usability and improvements
+This app is quite user friendly and I am open for feedbacks on the usability. Personally, I think one area that needs improvement is the search field that takes a bit of time to respond due to the large volume of data available.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
