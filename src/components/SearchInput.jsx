@@ -7,6 +7,7 @@ export const SearchInput = ({ filterByKeyword, data, setSearchedData }) => {
   return (
     <Box>
       <Input
+        bg="#DCEBFA"
         h="60px"
         value={keyword}
         placeholder="Search by date, time or total tokens"
